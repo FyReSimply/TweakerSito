@@ -1,0 +1,103 @@
+/* Reset base per margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stili generali del corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenitore del modulo di login */
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Intestazione del modulo */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Stili del modulo */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stili per le etichette */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Stili per gli input */
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+/* Stili per il pulsante di login */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per messaggi di errore o successo */
+.message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #d9534f; /* Colore rosso per errori */
+}
+
+.success {
+    color: #5bc0de; /* Colore blu chiaro per successo */
+}
+
+/* Stili responsivi */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

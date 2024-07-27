@@ -1,0 +1,103 @@
+/* Base styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Full-screen background image */
+body {
+    background-image: url('TweakSito.png'); /* Sostituisci con il percorso della tua immagine */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.SimplyTweak {
+    color: #ffffff;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+}
+
+#login-btn {
+    background: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#login-btn:hover {
+    background: #0056b3;
+}
+
+/* Main Section */
+main {
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    background: rgba(80, 80, 80, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.description h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.description p {
+    font-size: 1em;
+}
+
+/* Discord logo */
+.Discord {
+    margin-bottom: 20px; /* Aggiungi un margine inferiore se necessario */
+}
+
+.Discord a i {
+    font-size: 4em; /* Regola questa dimensione per rendere l'icona più grande */
+    color: #353535; /* Cambia il colore se necessario */
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Optional styles for responsiveness */
+@media (max-width: 600px) {
+    #login-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .description {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
